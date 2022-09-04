@@ -32,11 +32,7 @@ function Home({ menu }: HomeProps): JSX.Element {
         Primary
       </Tag>
       <Rating rating={rating} isEditable setRating={setRating} />
-      <ul>
-        {menu.map((mn) => (
-          <li key={mn._id.secondCategory}>{mn._id.secondCategory}</li>
-        ))}
-      </ul>
+      
     </React.Fragment>
   );
 }
