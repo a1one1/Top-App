@@ -1,0 +1,20 @@
+.wrapper {
+	margin-top: 40px;
+}
+
+.title {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	align-items: center;
+	justify-items: left;
+	gap: 20px;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.hhTitle {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	justify-items: left;
+	gap: 20px;
+}
