@@ -1,11 +1,9 @@
 import styles from "./Advantages.module.css";
-import cn from "classnames";
 import React from "react";
 import CheckIcon from "../../static/Advantages/check.svg";
 import { AdvantagesProps } from "./Advantages.props";
 
 export const Advantages = ({ advantages }: AdvantagesProps): JSX.Element => {
-  console.log(advantages)
   return (
     <React.Fragment>
       {advantages.map((advantage) => (
