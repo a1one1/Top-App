@@ -21,7 +21,7 @@ export interface ProductModel {
     credit: number
     oldPrice: number
     description: string
-    characteristic: ProductCharacteristic[]
+    characteristics: ProductCharacteristic[]
     createdAt: Date
     updateAt: Date
     __v: number
