@@ -10,6 +10,7 @@ import { Divider } from "../Divider/Divider";
 import Image from "next/image";
 import cn from "classnames";
 import { Review } from "../Review/Review";
+import { ReviewForm } from "../ReviewForm/ReviewForm";
 
 export const Product = ({
   product,
@@ -121,8 +122,12 @@ export const Product = ({
         })}
       >
         {product.reviews.map((review) => (
-          <Review key={review._id} review={review} />
+          <React.Fragment>
+            <Review key={review._id} review={review} />
+            <Divider />
+          </React.Fragment>
         ))}
+        <ReviewForm productId={product._id}/>
       </Card>
     </React.Fragment>
   );
