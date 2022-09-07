@@ -3,7 +3,7 @@
 	display: grid;
 	grid-template-columns: 24px 1fr;
 	gap: 20px;
-	align-items: center;
+	align-self: center;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 25px;
@@ -35,15 +35,7 @@
 }
 
 .secondLevelBlock {
-	display: none;
-}
-
-.secondLevelBlockOpened {
-	display: block;
-}
-
-.secondLevelBlockOpened:last-child {
-	margin-bottom: 20px;
+	overflow: hidden;
 }
 
 .thirdLevel {
